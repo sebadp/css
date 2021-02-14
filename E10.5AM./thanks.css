@@ -1,0 +1,41 @@
+.main{
+    margin: 10vh 25vw;
+    width: 50vw;
+    height: 70vh;
+    position: relative;
+
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.main img{
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+    position: relative;
+    margin: 5vh 10vw;
+    text-align: center;
+}
+.main h1{
+    font-size: 2.5em;
+}
+.main p{
+    font-size: 2em;
+}
+
+@media (max-width: 991px){
+    .main h1{
+        font-size: 2em;
+    }
+    .main p{
+        font-size: 1.5em;
+    }   
+    .main img{
+        height: 90%;
+        width: 90%;
+    }
+    .main{
+        margin: 10vh 15vw;
+        width: 70vw;
+        height: 80vh;
+    }
+}

@@ -1,0 +1,50 @@
+.flex-conteiner{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    background: #444444;
+    margin: 50px 30px;
+    padding: 15px;
+}
+
+.form{
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;    
+}
+
+.form__input{
+    padding: 7px;
+    width: 100%;
+    margin: 6px 0 ;
+    border: none;
+}
+
+.form textarea{
+    min-height: 140px;
+    resize: none;
+}
+.form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+}
+
+
+.img-container{
+
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+img{
+    margin: auto;
+    display: flex;
+    width: 60%;
+    border-radius: 15%;
+
+}

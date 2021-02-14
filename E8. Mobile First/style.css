@@ -1,0 +1,78 @@
+.content{
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
+
+.header, article, aside, footer{
+    padding: 20px;
+}
+
+.header{
+background: lightblue;
+flex-basis: 80px;
+}
+
+.main{
+    background: slateblue;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.aside{
+background: darkblue;
+flex-basis: 200px;
+flex-grow: 1;
+flex-shrink: 0;
+}
+
+.footer{
+    background-color: blueviolet;
+    flex-grow: 1;
+}
+/*    DE ESTA MANERA SE HARIA CON FLEX, 
+            QUE NO ES LO OPTIMO.
+@media screen and (min-width: 700px){
+    .content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .header{
+        flex-basis: 100%;
+        max-height: 80px;
+    }
+    .footer{
+        flex-basis: 100%;
+        max-height: 80px;
+    }
+    .main, .aside{
+        height: 490px;
+    }
+} */
+@media screen and (min-width: 700px){
+    .content{
+display: grid;
+grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: repeat(3, 1fr);
+    }
+    .header{
+       grid-column: 1 / span 3;
+    }
+    .footer{
+        grid-column: 1 / span 3;
+        grid-row: 6 / 7;
+    }
+    .main{
+        grid-column: 1 / span 2;
+        grid-row: 2 / 6;
+        
+    } 
+    
+    .aside{
+        grid-row: 2 / 3;
+        grid-row: 2 / 6;
+
+        
+    }
+}
