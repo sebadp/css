@@ -356,6 +356,11 @@
   }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,500&display=swap');  
   
+body{
+  background-color: #fcecc2 ;
+  font-family: 'Satisfy', sans-serif;
+
+}
 header{
     object-fit: contain;
     overflow: hidden;
@@ -382,6 +387,9 @@ header.img{
     background-color: #f2f2f2;
     padding: 1em;
     text-align: center;
+  }
+.main .h1, .h2{
+  color: #62763e;
 }
 .main__container {
     display: flex;
@@ -404,7 +412,7 @@ header.img{
 }
 
 .targeta:hover{
-    background-color: #a7a6a6;
+    background-color:#fcecc2;
 }
 
 .targeta h2{
@@ -425,8 +433,9 @@ header.img{
 
 .wrapper{
     text-align: center;    
-    padding: 1em;
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    background-color: #fcecc2;
     color: white;
 
 }
@@ -464,8 +473,9 @@ header.img{
 
 footer{
     text-align: center;
-    padding: 1em;
-    background-color: black;
+    padding: 0;
+    margin: 0;
+    background-color:#fcecc2;
     color: white;
 }
 footer .footer__container .icons{

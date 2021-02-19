@@ -11,12 +11,13 @@
 <body>
     <section>
         <div class="home">
-            <h2 class="h2"><a href="{% url 'index' %}"><i class="fas fa-arrow-circle-left"></i>    HOME</a></h2>
+            <img src="img/back.png" alt="">
         </div>
-        <div class="left">
-            <img src="img/form.jpg" alt="">
-        </div>
+        
         <div class="content">
+            <div class="left">
+                <img src="img/form.png" alt="">
+            </div>
             <div class="contactForm">
                 <form class="form" action="" method="POST">
                     {% csrf_token %}
@@ -50,6 +51,6 @@
             {% endblock content %}
 
         </div>
-    </section>
+ </section>
 </body>
 </html>

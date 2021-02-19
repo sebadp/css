@@ -356,8 +356,11 @@
   }
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
   body{
+    background-color: #fcecc2 ;
+    
     font-family: 'Roboto', sans-serif;
   }
+
 section{
     display: flex;
     flex-direction: row;
@@ -365,40 +368,37 @@ section{
     width:100%;
     justify-content: left;}
 
-    .home .h2{
-
-        position: absolute;  
-        margin: 2em;
-        z-index: 100;
-        color: rgb(49, 49, 49);
-    }
-    .home .h2 a{
-      list-style: none;
-      text-decoration: none;
-      color: #000;
-      text-shadow: 2px 2px #fff;
-    }
 
 .left{
     height: 100vh;
     max-width: 40vw;
     object-fit: contain;
     overflow: hidden;
+    position: absolute;
+    display: flex;
+
+}
+.left img{
+  display: flex;
 }
 .content{
     max-width: 60vw;
+
 }
 
 .contactForm{
-    width: 100%;
+    color: white;
+    width: 65%;
     padding: 40px;
-    background: #fff;
-
+    background-color: #fcecc2 ;
+    
+    margin-left: 155px;
   }
   .contactForm h2{
     font-size: 30px;
-    color: #333;
+    color: black;
     font-weight: 500;
+    opacity: 1;
   }
   .contactForm .inputBox{
     position: relative;
@@ -446,39 +446,57 @@ section{
 }
 .contactForm .inputBox input[type="submit"]{
   width: 100px;
-  background: #00bcd4;
+  background:#62763e ;
   color: #fff;
   border: none;
   cursor: pointer;
   padding: 10px;
   font-size: 18px; 
 }
+
 @media (max-width: 991px){
     section{
         display: flex;
         flex-direction: column;
+        margin: 0;
+        pad: 0;
+      
     }
     .left{
-        max-width: 100vw;
+        position: relative;
+      max-width: 100vw;
         height: auto;
     }
     .content{
         max-width: 100vw;
         margin-top: 0em;
+        margin: 0;
+        pad: 0;
     }
   .contact{
     padding: 50px;
+    margin: 0;
+    pad: 0;
   }
   .container{
     flex-direction: column;
+    
   }
   .container .content .box .contactInfo .icon{
     text-align: left;
     flex-direction: column;
   }
+  .contactForm{
+    color: white;
+    width: 100%;
+    margin: 0;
+    
+
+  }
+
   .contactInfo .container .content .contactForm{
     margin-bottom: 40px;
-    width: 90%;
+    width: 95%;
     flex-direction: column;
 
   }   
