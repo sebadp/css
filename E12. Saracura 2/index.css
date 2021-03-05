@@ -1,0 +1,34 @@
+/* Root CSS */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fcecc2;
+    color: rgb(236, 235, 228);
+    font-family: sans-serif;
+    line-height: 1.25;
+
+    position: relative;
+
+}
+.info{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+
+}
+.carrusel__container{
+    position: relative;
+    width: 70vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reserva{
+    margin: 4em;
+}
