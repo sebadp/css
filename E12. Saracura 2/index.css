@@ -19,15 +19,21 @@ body{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    height: 80vh;
+    max-height: 80vh;
 
 }
 .carrusel__container{
     position: relative;
+    display: block;
     width: 70vw;
     height: 50vh;
     margin-left: auto;
     margin-right: auto;
+}
+.carrusel__container img{
+    object-fit: contain;
+    max-height: 60vh;
+    width: 70vw;
 }
 .reserva{
     margin: 4em;
