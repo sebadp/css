@@ -486,7 +486,7 @@ footer{
     background-color:#fcecc2;
     color: white;
 }
-footer .footer__container .icons{
+/* footer .footer__container .icons{
     display: flex;
     justify-content: center ;
 }
@@ -497,7 +497,7 @@ footer .footer__container li{
 }
 footer li{
     list-style: none;
-}
+} */
 
 @media (max-width: 991px){
 
@@ -566,14 +566,21 @@ margin: .5em;
   height: 100%;
   object-fit: cover;
 }
-
+.productos .container{
+  display: block;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
 footer{
   text-align: center;
-  padding: 1em;
-  background-color: black;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
   color: white;
 }
-footer .footer__container .icons{
+/* footer .footer__container .icons{
   display: flex;
   justify-content: center ;
 }
@@ -584,6 +591,6 @@ footer .footer__container li{
 }
 footer li{
   list-style: none;
-}
+} */
 
 }
